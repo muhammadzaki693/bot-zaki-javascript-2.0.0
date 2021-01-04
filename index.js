@@ -1,6 +1,3 @@
-const keep_alive = require('./keep_alive.js');
-
-//discord.js
 const Discord = require('discord.js');
 
 const got = require('got');
