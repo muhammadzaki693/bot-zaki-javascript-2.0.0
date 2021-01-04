@@ -175,4 +175,4 @@ client.on('message', message => {
 	}
 });
 
-client.login('Nzg5MzY5Mjk0Njg1MzM5Njg4.X9xDcQ.EifuKiM7tVfUQnyXtMYcCCZQUfw');
+client.login('your-cool-token');
