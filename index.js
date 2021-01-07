@@ -29,7 +29,9 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.on('message', message => {
+client.on('message', async message => {
+        let prefix
+
 	if (db.get(`prefix_${message.guild.id}`) === null) {
 		prefix = ':';
 	} else {
@@ -172,7 +174,11 @@ client.on('message', message => {
 		message.channel.send(`command name: ${command}\nargs: ${args}`);
 	} else if (command === 'ascii') {
 		client.commands.get('ascii').execute(client, message, args);
-	}
+	} else if (command === 'restart') {
+                if (message.author.id != ownerid) return message.reply('you not an owner')
+                
+                await message.channel.send('restarting')
+                process.exit()
 });
 
 client.login('your-cool-token');
