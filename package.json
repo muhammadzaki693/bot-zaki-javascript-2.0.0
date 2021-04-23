@@ -10,7 +10,7 @@
   "author": "muhammadzakirhamadan",
   "license": "ISC",
   "dependencies": {
-    "@replit/database": "^2.0.0",
+    "@replit/database": "^2.0.1",
     "discord.js": "^12.5.1",
     "enmap": "^5.8.4",
     "express": "^4.17.1",
